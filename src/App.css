@@ -1,8 +1,9 @@
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
+.top {
+  display: 'flex';
+  flex-wrap: 'wrap';
+  justify-content: 'space-around';
+  overflow: 'hidden';
+}
 
 .main-container {
   padding: 25px;
@@ -11,8 +12,6 @@
 .main-subContainer{
   display: flex;
   flex-direction: row;
-  /* width: 70%;
-  margin: 0 auto; */
 }
 
 .main-subContainer-center{
@@ -23,7 +22,7 @@
 
 .logo {
   height: 8vmin;
-  padding-top: 30;
+  /* padding-top: 30px; */
 }
 
 .header{
@@ -40,33 +39,34 @@
   font-weight: 400;
   padding-top: 0px;
   margin-top: 0px;
-}
-
-.input-field{
-  width: 200px;
-  padding: 10px;
+  text-align: left;
 }
 
 .input-dropdown{
   border: 1px solid #dddddd;
-  width: 100px;
+  width: 200px;
   padding: 10px;
   margin-left: 30px;
 }
+
 .top-level{
   max-width: 1024px;
   justify-content: center;
 }
 
-/* .App-link {
-  color: #61dafb;
+@media (max-width: 767px) {
+  .input-dropdown{
+    margin-left: 4px !important;
+  }
+  .logo {
+    padding-top: 15px;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 400px) {
+  .input-dropdown{
+    margin-left: 2px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .logo {
+    padding-top: 50px;
   }
-} */
+}
